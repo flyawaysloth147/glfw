@@ -3,6 +3,8 @@ project "GLFW"
 	language "C"
 	staticruntime "off"
 
+	outDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+		
 	targetdir ("bin/" .. outDir .. "/%{prj.name}")
 	objdir ("bin-int/" .. outDir .. "/%{prj.name}")
 
